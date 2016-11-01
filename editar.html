@@ -1,0 +1,86 @@
+<head>
+	
+	<title>Tema Principal</title>
+	<meta charset=utf-8>
+	<link href="style.css" rel="stylesheet">
+
+	
+	<script>	
+	
+		$(document).ready(function(e){
+			$(".link_error").click(function(e){
+				e.preventDefault();
+				
+				
+				var confirmar = confirm("Deseja realmente excluir esta pessoa?");
+				
+				
+				
+				if(confirmar){
+					$(".resultado").html("Excluido com sucesso.");
+				}
+			});
+			
+			$("#editardialog").dialog({
+				
+				autoOpen:false;
+			});
+			
+			$(".link_editar").click(function(e){
+				e.preventDefault();
+				
+				$("#editardialog").dialog('open');
+				
+			});
+		
+		});
+	
+	</script>
+</head>
+
+	<div class="row" id="c">
+		
+		<table>
+			<tr class="trcima">
+				<td>Nome</td>
+				<td>Email</td>
+				<td>Data Nasc.</td>
+				<td>Ações</td>
+			</tr>
+			
+			<tr class="trbaixo">
+				<td>Adilson Das Neves</td>
+				<td>adidi@gmail.com</td>
+				<td>10/10/1980</td>
+				<td><a href="#" class="link_editar">Editar</a> | <a href="#" class="link_error">Excluir</a></td>
+			</tr>
+			
+			<tr class="trbaixo">
+				<td>Adilson Das Neves</td>
+				<td>adidi@gmail.com</td>
+				<td>10/10/1980</td>
+				<td><a href="#" class="link_editar">Editar</a> | <a href="#" class="link_error">Excluir</a></td>				
+			</tr>
+				<tr class="trbaixo">
+				<td>Adilson Das Neves</td>
+				<td>adidi@gmail.com</td>
+				<td>10/10/1980</td>
+				<td><a href="#" class="link_editar">Editar</a> | <a href="#" class="link_error">Excluir</a></td>				
+			</tr>
+				<tr class="trbaixo">
+				<td>Adilson Das Neves</td>
+				<td>adidi@gmail.com</td>
+				<td>10/10/1980</td>
+				<td><a href="#" class="link_editar">Editar</a> | <a href="#" class="link_error">Excluir</a></td>				
+			</tr>
+				<tr class="trbaixo">
+				<td>Adilson Das Neves</td>
+				<td>adidi@gmail.com</td>
+				<td>10/10/1980</td>
+				<td><a href="#" class="link_editar">Editar</a> | <a href="#" class="link_error">Excluir</a></td>			
+			</tr>
+		</table>
+		<div id="editardialog"></div>
+		<div class="resultado"></div>
+		
+	</div>
