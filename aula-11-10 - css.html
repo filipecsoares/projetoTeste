@@ -1,0 +1,75 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Aula 11/10/2016</title>
+	<style type="text/css">
+		body {
+			background: #227777;
+			font-family: arial;
+		}
+		h1, h2, h3, h4 {
+			text-align: center;
+		}
+
+		p{
+			letter-spacing: 1px;
+			word-spacing: 2px;
+			line-height: 20px;
+		}
+
+		label{
+			
+		}
+	</style>
+	<script type="text/javascript">
+		function teste(){
+			alert("Teste");
+		};
+	</script>
+</head>
+	<body>
+		<h1> Aula 11/10/2016 </h1>
+		<figure>
+			<img src="teste.png" width="50" height="50" />
+			<figcaption>TESTE</figcaption>
+		</figure>
+		<form action="teste">
+			<fieldset>
+				<label for="nome" >Nome:</label> 
+				<input type="text" id="nome" /></br>
+				<label for="email">Email:</label> 
+				<input type="email" id="email" /></br>
+				<label for="senha">Password:</label> 
+				<input type="password" id="senha" /></br>
+				<label for="data">Data:</label> 
+				<input type="date" id="data" /></br>
+				<label for="cor">Cor:</label> 
+				<input type="color" id="cor" /></br>
+				<label for="bairro">Bairro:</label>
+				<select size="1" id="bairro">
+					<option>Bela vista</option>
+					<option>Caminho novo</option>
+					<option>Madri</option>
+					<option selected="selected">Passa 20</option>
+				</select></br>
+				Interesses: </br>
+				<input type="checkbox" name="interresse" /> 1</br>
+				<input type="checkbox" name="interresse" /> 2</br>
+				<input type="checkbox" name="interresse" /> 3</br>
+
+				Idade: <input type="radio" name="idade"> 0 - 17
+				<input type="radio" name="idade"> 18 - 35
+				</br>
+				Observações:</br>
+				<textarea cols="40" rows="5" id="obs"></textarea>
+				</br>
+				<input type="hidden" value="valorOculto" name="oculto" /></br>
+				<input type="reset" /></br>
+				<input type="submit" /></br>
+				</br></br>
+				<button type="button" onclick="teste()" >Salvar</button>
+				<legend>Dados Pessoais</legend>
+			</fieldset>
+		</form>
+	</body>
+</html>
