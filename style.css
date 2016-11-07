@@ -12,9 +12,16 @@ td {
 }
 
 table {
-	align: center;
+	margin: 0 auto;
 }
 
 .trcima {
 	background-color: #BBBBBB;
+}
+h1 {
+	text-align: center;
+}
+
+.divcenter {
+	text-align: center;
 }
