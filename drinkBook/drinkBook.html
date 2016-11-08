@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+		<head>
+			<meta charset="utf-8">
+			<title>Cadastro de Clientes</title>
+		</head>
+<body>
+	<fieldset>
+		<legend>Cadastro de Clientes</legend>
+		<table>
+	<tr>
+	 	<td>
+			<label for="nome">Nome: </label>
+	 	</td>
+	 	<td>
+			<input type="text" name="name">
+	 	</td>
+	 </tr>
+	<tr>
+	 <td>
+		<label>Data de Nascimento: </label>
+	 </td>
+	 <td>
+		<input type="text" name="dia" size="2" maxlength="2" value="dd"> 
+	 <input type="text" name="mes" size="2" maxlength="2" value="mm"> 
+	 <input type="text" name="ano" size="4" maxlength="4" value="aaaa">
+	 </td>
+	</tr>
+<tr>
+	<td>
+	 </table>
+	 <table>
+	 	<br />
+		<label>Estado: </label>
+		<input type="radio" name="estado" />Rio Grande Do Sul
+		<input type="radio" name="estado" />Santa Catarina
+		<input type="radio" name="estado" />Paraná
+		<br/>
+ </td>
+</tr>
+<tr>
+ <td>
+		Interesses:
+		<input type="checkbox" />Cerveja
+		<input type="checkbox" />Vodka
+		<input type="checkbox" />Refrigerante
+		<input type="checkbox" />Água
+		<br />
+	</td>
+</tr>
+<tr>
+	<td>
+		<br />
+		Avatar:
+		<br />
+		<input type="radio" name="imagem" value="" />
+		<img src = "http://vignette4.wikia.nocookie.net/disney/images/5/5c/Mike_Wazowski_Render_(1).png/revision/latest?cb=20130802231319" width="80" height="80"/>
+		<br />
+		<input type="radio" name="imagem"/>
+		<img src = "http://mail.rsgc.on.ca/~ldevir/ICS3U/Chapter4/Images/tux.png" width = "80" height = "80"/>
+		<br />
+		<input type="radio" name="imagem"/>
+		<img src = "http://www.imagenspng.com.br/wp-content/uploads/2015/07/minions-02.png" width = "80" height = "80"/>
+	</td>
+</tr>
+<tr>
+	<td>
+		<br/>
+		<input type=button value="Voltar">
+		<input type="submit" value="Confirmar">
+		<input type="reset" value="Limpar">
+		<input type=button value="Editar">
+	</td>
+</tr>
+</table>
+</fieldset>
+ </body>
+</html>
